@@ -1,0 +1,31 @@
+function insertText(){
+	document.getElementById("newContent").innerHTML = "Some new text: <br> Hallo</br>";
+}
+
+function calculate(){
+	var t = widthBox.value;
+	// read from textbox
+	var w = document.getElementById("widthBox").value;
+	var l = document.getElementById("lenghtBox").value;
+	var h = document.getElementById("heightBox").value;
+	
+	//convert to float
+	w=parseFloat(w);
+	h=parseFloat(h);
+	l=parseFloat(l);
+	var result = w*l*h;
+	
+	//show result in div
+	document.getElementById("result").innerHTML = "<h1>" + result + "</h1>";
+}
+	
+function multiplication(){
+	//read from textbox
+	document.getElementById("mult-tb").innerHTML = "";
+	var f = document.getElementById("factor").value;
+	for(var i=1;i<=10;i++){
+		var res=f*i;
+		//show result in div
+		document.getElementById("mult-tb").innerHTML += res+"<br>";
+		}
+	}
